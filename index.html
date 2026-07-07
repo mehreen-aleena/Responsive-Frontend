@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs - Project 1: Responsive Layout</title>
+    <!-- Typography Pairings: Inter & Roboto via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Wayfinding Navigation -->
+    <header class="site-header">
+        <div class="logo">DecodeLabs</div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Architecture</a></li>
+                <li><a href="#" class="nav-link">Digital Craft</a></li>
+                <li><a href="#" class="nav-link-btn">Build the Future</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Master Layout Grid Container -->
+    <div class="app-layout">
+        
+        <!-- Sidebar Panel Component -->
+        <aside class="sidebar">
+            <div class="panel-card">
+                <h3>Strategic Execution</h3>
+                <p>Welcome to your interface phase. This track focus entirely on adaptable interfaces through pure responsive logic.</p>
+            </div>
+            <div class="panel-card">
+                <h3>Qualification Status</h3>
+                <span class="badge">Project 1: Verified Start</span>
+            </div>
+        </aside>
+
+        <!-- Main Narrative Layout Area -->
+        <main class="main-content">
+            <!-- Hero Announcement Banner -->
+            <section class="hero-section">
+                <h1>The Future of Digital Craft</h1>
+                <p>Constructing digital experiences honoring the Mobile-First paradigm. Shift away from fragile dimensions into seamless flexibility.</p>
+                <button class="cta-btn">Explore Blueprint</button>
+            </section>
+
+            <!-- Distributable Content Grid Units -->
+            <section class="content-grid">
+                <article class="grid-card">
+                    <div class="icon-placeholder"></div>
+                    <h2>Semantic Integrity</h2>
+                    <p>Writing standardized layouts built for accessibility and structured screen readers natively.</p>
+                </article>
+
+                <article class="grid-card">
+                    <div class="icon-placeholder"></div>
+                    <h2>Macro Grid Blueprint</h2>
+                    <p>Leveraging powerful CSS structural rules for handling 2D design elements dynamically.</p>
+                </article>
+
+                <article class="grid-card">
+                    <div class="icon-placeholder"></div>
+                    <h2>Universal Access</h2>
+                    <p>Strict WCAG web adherence guarantees that the web remains open, reliable, and inclusive to everyone.</p>
+                </article>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- Terminal Metadata Area -->
+    <footer class="site-footer">
+        <p>&copy; 2026 DecodeLabs Internship Program. Designed with Grounded Precision.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

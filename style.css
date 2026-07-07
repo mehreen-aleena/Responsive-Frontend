@@ -1,0 +1,293 @@
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+    overflow-x:hidden;
+    transition:.3s;
+}
+
+body.dark{
+    background:#111827;
+    color:#ffffff;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#2563eb;
+}
+
+/* =====================================
+   LOADER
+===================================== */
+
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.spinner{
+    width:60px;
+    height:60px;
+    border:6px solid #ddd;
+    border-top:6px solid #2563eb;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* =====================================
+   PROGRESS BAR
+===================================== */
+
+#progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0;
+    height:5px;
+    background:#2563eb;
+    z-index:99999;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    transition:.3s;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#2563eb;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+#theme-toggle{
+    cursor:pointer;
+    font-size:22px;
+}
+
+.menu-btn{
+    display:none;
+    cursor:pointer;
+    font-size:28px;
+}
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(37,99,235,.3);
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero{
+    max-width:1200px;
+    margin:auto;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items:center;
+    gap:60px;
+    padding-top:120px;
+}
+
+.hero-content h1{
+    font-size:58px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content .typing{
+    color:#2563eb;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.hero-image img{
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    animation:floatImage 5s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
+#about{
+    background:#ffffff;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.container p{
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.cards{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:#ffffff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(37,99,235,.15);
+}
+
+.card i{
+    font-size:50px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.7;
+}
